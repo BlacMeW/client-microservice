@@ -16,6 +16,7 @@ class ClientController extends Controller
 
     public function handleRequest(Request $request)
     {
+
         try {
             // Forward request data to Middleware Microservice
             $response = $this->middlewareService->processRequest($request->all());

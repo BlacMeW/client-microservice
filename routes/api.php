@@ -1,5 +1,7 @@
 <?php
+
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 
-Route::post('/process', [ClientController::class, 'handleRequest']);
+Route::get('/process', [ClientController::class, 'handleRequest']);
